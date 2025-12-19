@@ -8,7 +8,7 @@ from .parsers import register
 from ..transport.serial_rs422 import open_serial
 import re, codecs
 
-app = typer.Typer(help="Request OrbFIX PVT.")
+app = typer.Typer(help="Configure NMEA periodic timer.")
 
 CMD_ID = 0x001B
 DEFAULT_SYSID = "0x6A"

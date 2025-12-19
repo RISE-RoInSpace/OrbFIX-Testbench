@@ -5,7 +5,7 @@ from ..transport.serial_rs422 import find_usb_device, DEFAULT_BAUD, DEFAULT_READ
 from .base import send_and_receive, DEFAULT_OVERALL_WAIT_S
 from .parsers import register
 
-app = typer.Typer(help="Request OrbFIX firmware/version info.")
+app = typer.Typer(help="Get or set the clock sync threshold.")
 
 CMD_ID = 0x0017
 DEFAULT_SYSID = "0x6A"
