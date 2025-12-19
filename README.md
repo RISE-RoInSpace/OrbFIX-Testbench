@@ -5,12 +5,12 @@ The OrbFIX Equipment Testbench is a Python-based command-line tool designed to d
 ### Installation
 
 #### Prerequisites
-- Python 3.9 or newer
+- Python 3.12 or newer
 - Access to an OrbFIX device via RS-422 interface
 
 #### Linux
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -e .
@@ -18,9 +18,10 @@ pip install -e .
 
 #### Windows (PowerShell)
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
+pip install windows-curses
 pip install -e .
 ```
 

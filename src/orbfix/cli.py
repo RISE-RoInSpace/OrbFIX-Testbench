@@ -37,6 +37,8 @@ from .cmds import x0016_troposphere_model as troposphere_model
 from .cmds import x0017_clock_sync_threshold as clock_sync_threshold
 from .cmds import x0018_pps_parameters as pps_parameters
 from .cmds import x0019_timing_system as timing_system
+from .cmds import x0020_orbfix_cold_restart as orbfix_cold_restart
+from .cmds import x0021_save_to_boot as save_to_boot
 
 from .cmds import x001B_get_NMEA_output as get_NMEA_output
 
@@ -77,6 +79,8 @@ cmd_app.add_typer(smoothing_interval.app, name="smoothing-interval")
 cmd_app.add_typer(satellite_usage.app, name="satellite-usage")
 cmd_app.add_typer(notch_filtering.app, name="notch-filtering")
 cmd_app.add_typer(pps_parameters.app, name="pps-parameters")
+cmd_app.add_typer(orbfix_cold_restart.app, name="orbfix-cold-restart")
+cmd_app.add_typer(save_to_boot.app, name="save-to-boot")
 
 cmd_app.add_typer(firmware_update.app, name="firmware-update")
 cmd_app.add_typer(tracking_loop_parameters.app, name="tracking-loop-parameters")

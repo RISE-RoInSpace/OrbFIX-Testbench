@@ -7,7 +7,7 @@ name = "OrbFIX-Testbench"
 version = "0.1.0"
 description = "OrbFIX bench command utilities and test runners"
 readme = "README.md"
-requires-python = ">=3.8.1"
+requires-python = ">=3.12.0"
 dependencies = [
   "pyserial",
   "typer",
@@ -15,8 +15,7 @@ dependencies = [
   "PyYAML",
   "importlib_resources>=5.12; python_version < '3.9'",
   "pycrc",
-  "pyusb",
-  "windows-curses"
+  "pyusb"
 ]
 
 [project.scripts]
